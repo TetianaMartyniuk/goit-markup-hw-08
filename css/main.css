@@ -227,10 +227,10 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
   background-color: var(--main-bcg);
   transform: translateX(-101%);
   transition: transform 200ms ease-in-out;
+  overflow-y: scroll;
 }
 
 .menu__wrapper.is-open {

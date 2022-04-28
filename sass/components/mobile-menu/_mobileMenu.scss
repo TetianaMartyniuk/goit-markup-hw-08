@@ -11,13 +11,12 @@
     width: 100vw;
     height: 100vh;
 
-    overflow-y: scroll;
-
     background-color: var(--main-bcg);
     
     transform: translateX(-101%);
     transition: transform 200ms ease-in-out;
-    
+    overflow-y: scroll;
+
     &.is-open {
         position: fixed;
         top: 0;
@@ -45,6 +44,7 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
 
     color: var(--main-text-dark-color);
 
