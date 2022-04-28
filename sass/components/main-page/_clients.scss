@@ -1,0 +1,35 @@
+.clients__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.clients__card{
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+}
+
+.clients__link--hover {
+    border: 1px solid var(--icon-main-color);
+    border-radius: 4px;
+
+    fill: var(--icon-main-color);
+
+    transition: border var(--anim-hover),
+        fill var(--anim-hover);
+    
+    &:hover, &:focus {
+        border: 1px solid var(--icon-accent-color);
+        fill: var(--icon-accent-color);
+    }
+
+}

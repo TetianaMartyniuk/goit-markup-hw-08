@@ -1,0 +1,28 @@
+.team__social-list {
+    display: flex;
+}
+
+// Расстояние между ссылками на соц.сети
+.team__items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: inherit;
+    border-radius: 50%;
+    fill: var(--icon-main-color);
+
+    transition: background-color var(--anim-hover), fill var(--anim-hover);
+
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+        fill: var(--icon-accent-second);
+    }
+}

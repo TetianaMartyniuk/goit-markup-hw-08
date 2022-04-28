@@ -1,0 +1,66 @@
+.backdrope {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        
+        & .backdrope__wrapper {
+            transform: translate(-50%, -50%) scale(0.7);
+        }
+    }
+}
+
+.backdrope__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 40px;
+
+    width: 528px;
+    background-color: var(--main-bcg);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    background-color: var(--main-bcg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: fill var(--anim-hover);
+
+    &:hover {
+        fill: var(--icon-accent-color);
+    }
+}

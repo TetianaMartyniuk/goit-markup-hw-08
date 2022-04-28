@@ -1,0 +1,17 @@
+/* Активная страничка подсвечивается */
+.nav-list__link.current {
+    color: var(--accent-color);
+}
+
+.current::after {
+    content: "";
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+
+}

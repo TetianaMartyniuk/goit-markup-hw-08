@@ -1,0 +1,41 @@
+.work {
+    padding-top: 0;
+
+    & .title {
+        margin-bottom: 50px;
+    }
+}
+
+.work__list {
+    display: flex;
+}
+
+
+.work__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.work__title-wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+
+    background-color: var(--work-title-bgc)
+}
+
+.work__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+
+}
