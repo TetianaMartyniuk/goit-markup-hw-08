@@ -85,9 +85,26 @@ body,
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -164,15 +181,48 @@ header .container {
 }
 
 .header__logo-link {
-  margin-right: 93px;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo-link {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo-link {
+    margin-right: 93px;
+  }
 }
 
 .header__logo {
   color: var(--accent-color);
 }
 
-.nav-list {
+.menu__btn {
+  margin: 10px 15px 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}
+
+.menu__btn > button {
+  width: 40px;
+  height: 40px;
   display: flex;
+  align-items: center;
+}
+
+.menu__wrapper {
+  display: none;
+}
+
+.nav-list {
+  display: none;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -219,7 +269,7 @@ header .container {
 }
 
 .header__address-list {
-  display: flex;
+  display: none;
   margin-left: auto;
   font-weight: 500;
   letter-spacing: 0.02em;

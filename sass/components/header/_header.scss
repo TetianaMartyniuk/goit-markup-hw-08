@@ -16,7 +16,16 @@ header {
 }
 
 .header__logo-link {
-    margin-right: 93px;
+    margin-right: auto;
+
+    @media  screen and (min-width: $tablet) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: $desc) {
+        margin-right: 93px;
+    }
+   
 }
 
 .header__logo {
