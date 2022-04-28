@@ -50,7 +50,6 @@
 
     @media screen and (min-width: $mobile) and (max-width: $onlyMobile) {
         width: 480px;
-        height: auto;
         margin-left: auto;
         margin-right: auto;
         
@@ -68,11 +67,6 @@
 }
 
 // Контакты
-.mobile-contacts {
-    @media screen and (min-width: $mobile) and (max-width: $onlyMobile) {
-        margin-top: 302px;
-    }
-}
 
 .menu__item-phone {
     font-size: 24px;

@@ -263,7 +263,6 @@ button {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu__thumb {
     width: 480px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 40px;
@@ -276,12 +275,6 @@ button {
 
 .menu__item:hover, .menu__item:focus {
   color: var(--accent-color);
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .mobile-contacts {
-    margin-top: 302px;
-  }
 }
 
 .menu__item-phone {
