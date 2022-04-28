@@ -1,0 +1,45 @@
+.menu__btn-wrapper {
+    margin: 10px 0px 10px auto;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10; 
+    transition: fill var(--anim-hover);
+
+    &:hover,
+    &:focus {
+        fill: var(--icon-accent-color);
+    }
+
+    & .icon-close {
+        opacity: 0;
+        transition: transform 250ms ease-in-out,
+        opacity 250ms ease-in-out;
+        transform-origin: center;
+    }
+
+    &.is-active .icon-close {
+        opacity: 1;
+        transform: rotate(1.5turn);
+    }
+
+    & .icon-menu {
+        opacity: 1;
+        transition: transform 250ms ease-in-out,
+        opacity 250ms ease-in-out;
+        transform-origin: center;
+    }
+
+    &.is-active .icon-menu {
+        opacity: 0;
+        transform: rotate(1.5turn);
+    }
+}

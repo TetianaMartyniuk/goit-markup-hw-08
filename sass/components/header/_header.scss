@@ -1,11 +1,15 @@
 header {
-    & .container {
-        display: flex;
+
+    @media screen and (min-width: $tablet) {
+        & .container {
+            display: flex;
+        }
     }
 }
 
 .header {
     border-bottom: 1px solid #ececec;
+
 }
 
 .header__nav {

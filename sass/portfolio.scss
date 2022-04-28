@@ -1,6 +1,9 @@
 @import './utils/variables';
 @import './base/base';
 @import './components/logo';
+
+@import './components/mobile-menu/mobileMenuSection';
+
 @import './components/header/sectionHeader';
 @import './components/portfolio-page/filterList';
 @import './components/portfolio-page/projectCard';

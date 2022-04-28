@@ -17,6 +17,13 @@ img {
     height: auto;
 }
 
+button {
+    padding: 0;
+    border: 0;
+    border-style: none;
+    cursor: pointer;
+}
+
 /* Убирает декор списков и линков, точечно */
 .list {
     margin: 0;
