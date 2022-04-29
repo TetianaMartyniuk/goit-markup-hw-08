@@ -1,11 +1,16 @@
 .socials {
-    margin-left: 70px;
-
+    margin-top: 60px;
+    
     &>p {
-        color: var(--secondary-text-color);
+        color: getMap(secondary-text-light);
         font-weight: 700;
         line-height: 1.1;
         text-transform: uppercase;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        margin-left: 70px;
     }
 }
 
@@ -33,13 +38,13 @@
     width: 44px;
     height: 44px;
 
-    background-color: var(--icon-footer-bgc);
+    background-color: getMap(icon-secondary-bgc);
     border-radius: 50%;
-    fill: var(--icon-accent-second);
+    fill: getMap(icon-accent-secondary);
 
-    transition: background-color var(--anim-hover);
+    transition: background-color getMap(anim-hover);
 
     &:hover, &:focus {
-        background-color: var(--icon-accent-color);
+        background-color: getMap(icon-accent-bgc);
     }
 }

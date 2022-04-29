@@ -24,15 +24,6 @@
 
 
 .header__contacts__item {
-    &:hover .header__contacts__link,
-    &:focus .header__contacts__link {
-        color: getMap(accent-text);
-    
-        & .mail-icon,
-        & .smartphone-icon {
-            fill: getMap(icon-accent-primary);
-        }
-    }
 
     @media screen and (max-width: $onlyTablet) {
         &:first-child {
@@ -62,6 +53,16 @@
     color: getMap(primary-text);
 
     transition: color getMap(anim-hover);
+
+    &:hover,
+    &:focus {
+        color: getMap(accent-text);
+
+        & .mail-icon,
+        & .smartphone-icon {
+            fill: getMap(icon-accent-primary);
+        }
+    }
 }
 
 .mail-icon,
