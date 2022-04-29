@@ -217,12 +217,8 @@ button {
   transform: rotate(1.5turn);
 }
 
-.menu__overlay {
-  width: 100vw;
-}
-
 .menu__wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -234,7 +230,6 @@ button {
 }
 
 .menu__wrapper.is-open {
-  position: fixed;
   top: 0;
   left: 0;
   transform: translateX(0%);

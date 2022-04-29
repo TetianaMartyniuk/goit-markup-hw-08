@@ -1,11 +1,11 @@
 
-.menu__overlay {
-    width: 100vw;
-    // overflow-y: scroll;
-}
+// .menu__overlay {
+//     width: 100vw;
+//     overflow-y: scroll;
+// }
 
 .menu__wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -18,7 +18,7 @@
     overflow-y: scroll;
 
     &.is-open {
-        position: fixed;
+        // position: fixed;
         top: 0;
         left: 0;
         
