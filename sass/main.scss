@@ -1,10 +1,12 @@
-@import './utils/variables';
-@import './base/base';
+@import './utils/module';
+@import './vendors/module';
+@import './base/module';
+
 @import './components/logo';
 
-@import './components/mobile-menu/mobileMenuSection';
+@import './components/mobile-menu/module';
+@import './components/header/module';
 
-@import './components/header/sectionHeader';
 @import './components/main-page/pageHero';
 @import './components/main-page/features';
 @import './components/main-page/work';

@@ -1,36 +1,53 @@
-.nav-list {
-    // display: flex;
-    
+.nav {   
     display: none;
     font-weight: 500;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
 }
 
-.nav-list__item:not(:last-child) {
-    margin-right: 50px;
-}
 
-.nav-list__item {
+.nav__item {
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
-.nav-list__link {
-    color: var(--main-text-dark-color);
+.nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
 
     &:hover, &:focus {
-        color: var(--accent-color);
+        color: getMap(accent-text);
     }
 
+    &--hover::after {
+        content: "";
+        background-color: getMap(accent);
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+    
+        transform: scaleX(0);
+        transition: transform getMap(anim-hover);
+        transform-origin: top right;
+    }
 }
 
-.nav-list--nav-hover::after,
-.nav-list--nav-hover::after {
+.nav__link--hover{
+    &::after {
     content: "";
-    background-color: var(--accent-color);
+    background-color: getMap(accent);
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -40,13 +57,12 @@
     left: 0px;
 
     transform: scaleX(0);
-    transition: transform var(--anim-hover);
+    transition: transform getMap(anim-hover);
     transform-origin: top right;
+    }
 
-}
-
-.nav-list--nav-hover:hover::after,
-.nav-list--nav-hover:focus::after {
-    transform: scaleX(1);
-    transform-origin: top left;
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: top left;
+    }
 }

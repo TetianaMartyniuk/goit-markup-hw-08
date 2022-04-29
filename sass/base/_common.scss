@@ -5,8 +5,8 @@ body,
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    color: var(--main-text-color);
-    background-color: var(--main-bcg);
+    color: getMap('primary-text');
+    background-color: getMap('primary-bgc');
 }
 
 
@@ -39,5 +39,5 @@ body,
     font-weight: 700;
     text-align: center;
 
-    color: var(--main-text-dark-color);
+    color: getMap('secondary-text-dark');
 }

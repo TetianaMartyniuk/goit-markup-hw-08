@@ -1,0 +1,15 @@
+.button {
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    color: getMap('secondary-text-light');
+    background-color: getMap('accent');
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color getMap('anim-hover');
+}
+
+.button:hover,
+.button:focus {
+    background-color: getMap('accent-btn');
+}

@@ -1,5 +1,6 @@
-header {
-
+.header {
+    border-bottom: getMap(header-border);
+    
     @media screen and (min-width: $tablet) {
         & .container {
             display: flex;
@@ -7,31 +8,11 @@ header {
     }
 }
 
-.header {
-    border-bottom: 1px solid #ececec;
-
-}
-
 .header__nav {
     display: flex;
     align-items: center;
 
-    color: var(--main-text-dark-color);
+    color: getMap(secondary-text-dark);
 }
 
-.header__logo-link {
-    margin-right: auto;
 
-    @media  screen and (min-width: $tablet) {
-        margin-right: 88px;
-    }
-
-    @media screen and (min-width: $desc) {
-        margin-right: 93px;
-    }
-   
-}
-
-.header__logo {
-    color: var(--accent-color);
-}

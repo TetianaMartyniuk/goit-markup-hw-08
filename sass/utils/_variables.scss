@@ -1,39 +1,84 @@
-:root {
-    /* Цвета текста*/
-    --main-text-color: #757575;
-    --main-text-dark-color: #212121;
-    --secondary-text-color: #ffffff;
-    --accent-color: #2196f3;
+$variables: (
+    // COLORS
+    // ДЛЯ ТЕКСТА
+    'primary-text': #757575,
+    'secondary-text-dark': #212121,
+    'secondary-text-light': #ffffff,
+    'footer-text-contacs': rgba(255, 255, 255, 0.6),
 
-    /* Цвета фона */
-    --main-bcg: #ffffff;
-    --secondary-bgc: #f5f4fa;
-    --footer-bgc: #2f303a;
-    --hero-bgc: #c4c4c4;
+    // АКЦЕНТЫ
+    'accent': #2196f3,
+    'accent-text': #2196f3,
+    'accent-btn': #188ce8,
 
-    /* Кнопка */
-    --button-hover-bgc: #188ce8;
+    // ФОН
+    'primary-bgc': #ffffff,
+    'secondary-bgc': #f5f4fa,
+    'footer-bgc': #2f303a,
+    'hero-bgc': #c4c4c4,
+    // для секции Чем мы занимаемся
+    'lining-dark': rgba(47, 48, 58, 0.8), 
+    // для секции Карточки работ (Портфолио
+    'lining-accent': rgba(33, 150, 243, 0.9),
 
-    /* Цвет телефона и эл.адреса в футере */
-    --footer-text-phonemail: rgba(255, 255, 255, 0.6);
+    // БОРДЕРЫ
+    'menu-socials-border': 1px solid rgba(33, 33, 33, 0.2),
+    'header-border': 1px solid #ececec,
 
-    /* Цвет иконок */
-    --icon-main-color: #AFB1B8;
-    --icon-second-color: #757575;
-    --icon-accent-color: #2196F3;
-    --icon-accent-second: #ffffff;
-    --icon-footer-bgc: rgba(255, 255, 255, 0.1);
-  
-    /* Чем мы заним. bgc */
-    --work-title-bgc: rgba(47, 48, 58, 0.8);
- 
-    /* Анимации */
-    --anim-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // ИКОНКИ
+    'icon-primary': #AFB1B8,
+    'icon-header': #757575,
+    'icon-accent-primary': #2196F3,
+    'icon-accent-secondary': #ffffff,
+    'icon-primary-bgc': transparent,
+    'icon-secondary-bgc': rgba(255, 255, 255, 0.1),
+    'icon-accent-bgc': #2196F3,
 
+    // ЛОГОТИП
+    'logo-primary-color': #000000,
+    'logo-secondary-color': #ffffff,
+    'logo-accent-color': #2196f3,
+
+    // ЕФФЕКТЫ
+    'anim-hover': 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    'anim-menu-mob': 200ms ease-in-out,
+);
+
+
+@function getMap($key) {
+    @return map-get($variables, $key);
 }
 
-@import './breackpoints';
-@import './current-page';
-@import './button';
-@import './visually-hidden';
+// :root {
+//     /* Цвета текста*/
+//     --main-text-color: #757575;
+//     --main-text-dark-color: #212121;
+//     --secondary-text-color: #ffffff;
+//     --accent-color: #2196f3;
 
+//     /* Цвета фона */
+//     --main-bcg: #ffffff;
+//     --secondary-bgc: #f5f4fa;
+//     --footer-bgc: #2f303a;
+//     --hero-bgc: #c4c4c4;
+
+//     /* Кнопка */
+//     --button-hover-bgc: #188ce8;
+
+//     /* Цвет телефона и эл.адреса в футере */
+//     --footer-text-phonemail: rgba(255, 255, 255, 0.6);
+
+//     /* Цвет иконок */
+//     --icon-main-color: #AFB1B8;
+//     --icon-second-color: #757575;
+//     --icon-accent-color: #2196F3;
+//     --icon-accent-second: #ffffff;
+//     --icon-footer-bgc: rgba(255, 255, 255, 0.1);
+
+//     /* Чем мы заним. bgc */
+//     --work-title-bgc: rgba(47, 48, 58, 0.8);
+
+//     /* Анимации */
+//     --anim-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// }

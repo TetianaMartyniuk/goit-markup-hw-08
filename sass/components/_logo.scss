@@ -1,17 +1,29 @@
-.header__logo-link,
-.footer__logo-link {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
 
-    color: #000000;
+    &__header {
+        color: getMap(logo-primary-color);
+    }
+    
+    &__footer {
+        color: getMap(logo-secondary-color);
+    }
+}
+.logo__accent {
+    color: getMap(logo-accent-color);
 }
 
-// Переопределяем цвета в Футере
-.footer__logo-link {
-    color: var(--secondary-text-color);
-}
+.logo__header {
+    margin-right: auto;
 
-.footer__logo {
-    color: var(--accent-color);
+    @media screen and (min-width: $tablet) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: $desc) {
+        margin-right: 93px;
+    }
+
 }

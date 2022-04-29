@@ -1,50 +1,72 @@
-.header__address-list {
-    // display: flex;
-    
+.header__contacts {  
     display: none;
 
     margin-left: auto;
     font-weight: 500;
+    font-size: 12px;
     letter-spacing: 0.02em;
     
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: $desc) {
+        flex-direction: row;
+        font-size: 14px;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
 }
 
-.header__item-mail {
-    margin-right: 50px;
 
+.header__contacts__item {
+    &:hover .header__contacts__link,
+    &:focus .header__contacts__link {
+        color: getMap(accent-text);
+    
+        & .mail-icon,
+        & .smartphone-icon {
+            fill: getMap(icon-accent-primary);
+        }
+    }
+
+    @media screen and (max-width: $onlyTablet) {
+        &:first-child {
+            margin-top: 21px;
+        }
+        &:last-child {
+            margin-top: 10px;
+            margin-bottom: 21px;
+        }
+    }
+
+    @media screen and (min-width: $desc) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
 }
 
-.header__item-mail,
-.header__item-phone {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-}
 
-
-.header__address-link {
+.header__contacts__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--main-text-color);
+    color: getMap(primary-text);
 
-    transition: color var(--anim-hover);
+    transition: color getMap(anim-hover);
 }
 
 .mail-icon,
 .smartphone-icon {
     margin-right: 10px;
-    fill: var(--icon-second-color);
-    transition: fill var(--anim-hover);
-}
-
-
-.header__address-link--hover:hover,
-.header__address-link--hover:focus {
-    color: var(--accent-color);
-
-    & .mail-icon,
-    & .smartphone-icon {
-        fill: var(--icon-accent-color);
-    }
+    fill: getMap(icon-header);
+    transition: fill getMap(anim-hover);
 }

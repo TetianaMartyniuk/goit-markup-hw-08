@@ -1,11 +1,11 @@
 /* Активная страничка подсвечивается */
 nav .current {
-    color: var(--accent-color);
+    color: getMap('accent-text');
 
     @media screen and (min-width: $tablet) {
         &::after {
             content: "";
-            background-color: var(--accent-color);
+            background-color: getMap('accent');
             width: 100%;
             height: 4px;
             border-radius: 2px;

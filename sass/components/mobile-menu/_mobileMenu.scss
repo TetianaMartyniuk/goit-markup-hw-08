@@ -11,10 +11,10 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: var(--main-bcg);
+    background-color: getMap(primary-bgc);
     
     transform: translateX(-101%);
-    transition: transform 200ms ease-in-out;
+    transition: transform getMap(anim-menu-mob);
     overflow-y: scroll;
 
     &.is-open {
@@ -46,7 +46,7 @@
     letter-spacing: 0.02em;
 
 
-    color: var(--main-text-dark-color);
+    color: getMap(secondary-text-dark);
 
     @media screen and (min-width: $mobile) and (max-width: $onlyMobile) {
         width: 480px;
@@ -62,7 +62,7 @@
         margin-bottom: 32px;
     }
     &:hover, &:focus {
-        color: var(--accent-color);
+        color: getMap(accent-text);
     }
 }
 
@@ -70,7 +70,7 @@
 
 .menu__item-phone {
     font-size: 24px;
-    color: var(--accent-color);
+    color: getMap(accent-text);
 
     @media screen and (min-width: $mobile) and (max-width: $onlyMobile) {
         font-size: 34px;
@@ -79,11 +79,11 @@
 .menu_item-mail {
     margin-top: 32px;
     font-size: 24px;
-    color: var(--main-text-color);
+    color: getMap(primary-text);
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: getMap(accent-text);
     }
 
     @media screen and (min-width: $mobile) and (max-width: $onlyMobile) {
@@ -101,14 +101,14 @@
     margin-top: 64px;
 
     font-size: 18px;
-    color: var(--accent-color);
+    color: getMap(accent-text);
 
 }
 
 .menu__socials-item {
     margin-right: 10px;
     margin-top: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    border-right: getMap(menu-socials-border);
 
     &:last-child {
         border: 0;

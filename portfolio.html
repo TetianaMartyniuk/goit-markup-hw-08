@@ -25,34 +25,126 @@
     <!-- Шапка страницы -->
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
-          <a class="header__logo-link link" href="./index.html"
-            ><span class="header__logo">Web</span>Studio</a
+        <nav class="header__nav menu-overlay">
+          <a class="logo logo__header link" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
           >
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a
-                class="nav-list__link link nav-list--nav-hover"
-                href="./index.html"
+          <div class="menu__btn-wrapper">
+            <button
+              class="menu__btn"
+              type="button"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/icons/symbol-defs.svg#icon-menu"
+                ></use>
+                <use
+                  class="icon-close"
+                  href="./images/icons/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="menu__wrapper" id="menu-container" data-menu>
+            <div class="menu__thumb">
+              <ul class="menu__nav list">
+                <li class="menu__item">
+                  <a class="menu__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link link current" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link link" href="#footer">Контакты</a>
+                </li>
+              </ul>
+              <div class="mobile-contacts">
+                <ul class="menu__contacts list">
+                  <li class="menu__item-phone">
+                    <a class="menu__address-link link" href="tel:+380961111111">
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="menu_item-mail">
+                    <a
+                      class="menu__address-link link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <ul class="menu__socials list">
+                  <li class="menu__socials-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreforrer"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="menu__socials-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreforrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="menu__socials-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreforrer"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="menu__socials-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreforrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link link nav__link--hover" href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link current" href="./portfolio.html"
+            <li class="nav__item">
+              <a class="nav__link link current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link nav-list--nav-hover" href=""
+            <li class="nav__item">
+              <a class="nav__link link nav__link--hover" href="#footer"
                 >Контакты</a
               >
             </li>
           </ul>
         </nav>
-        <ul class="header__address-list list">
-          <li class="header__item-mail">
+        <ul class="header__contacts list">
+          <li class="header__contacts__item">
             <a
-              class="header__address-link header__address-link--hover link"
+              class="header__contacts__link header__address-link--hover link"
               href="mailto:info@devstudio.com"
               ><svg class="mail-icon" width="16px" height="12px">
                 <use href="./images/icons/symbol-defs.svg#envelope"></use>
@@ -60,9 +152,9 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__item-phone">
+          <li class="header__contacts__item">
             <a
-              class="header__address-link header__address-link--hover link"
+              class="header__contacts__link header__address-link--hover link"
               href="tel:+380961111111"
             >
               <svg class="smartphone-icon" width="10px" height="16px">
@@ -79,7 +171,7 @@
       <!-- Список фильтра -->
       <section class="section container">
         <h1 class="visually-hidden">Our works</h1>
-        <ul class="filter-list list">
+        <!-- <ul class="filter-list list">
           <li class="filter-list__item">
             <button
               class="filter-list__btn filter-list__btn--hover"
@@ -120,9 +212,9 @@
               Маркетинг
             </button>
           </li>
-        </ul>
+        </ul> -->
         <!-- Список карточек работ, пока без ссылок -->
-        <ul class="projects list">
+        <!-- <ul class="projects list">
           <li class="projects__card">
             <a class="projects__link link" href="">
               <img
@@ -332,11 +424,11 @@
               </div>
             </a>
           </li>
-        </ul>
+        </ul> -->
       </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer" id="footer">
       <div class="container">
         <div>
           <a class="footer__logo-link link" href="./index.html"
@@ -428,6 +520,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
