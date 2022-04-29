@@ -1,5 +1,17 @@
 .features__list {
-    display: flex;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    @media screen and (min-width: $desc) {
+        flex-wrap: nowrap;
+        margin-top: 0;
+        margin-left: 0;
+    }
 }
 
 .features__item {
@@ -7,26 +19,46 @@
     min-height: 101px;
     line-height: 1.7;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: $onlyMobile){
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
     }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc( 100% / 2 - 30px);
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    @media screen and (min-width: $desc){
+        margin-top: 0;
+        margin-left: 0;
+        &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
+
+    
 }
 
 
 .features__title {
-    font-size: 14px;
+    font-size: $fs14;
+    margin-top: 30px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: $fw700;
     text-transform: uppercase;
-    color: var(--main-text-dark-color);
+    color: getMap(secondary-text-dark);
+
+    text-align: center;
 }
 
 .features__pic {
     display: flex;
-    background-color: var(--secondary-bgc);
+    background-color: getMap(secondary-bgc);
     justify-content: center;
     align-items: center;
     height: 120px;
     border-radius: 4px;
-    margin-bottom: 30px;
 }
