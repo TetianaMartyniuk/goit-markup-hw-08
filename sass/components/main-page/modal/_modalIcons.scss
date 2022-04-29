@@ -11,23 +11,22 @@
     left: 12px;
     transform: translatey(-50%);
 
-    transition: fill var(--anim-hover);
+    transition: fill getMap(anim-hover);
 }
 
 .input-border {
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: getMap(modal-input-border);
     outline: transparent;
 
-    transition: border var(--anim-hover), fill var(--anim-hover);
+    transition: border getMap(anim-hover), fill getMap(anim-hover);
 }
 
 .modal-form__field:hover .input-border,
 .modal-form__field:focus .input-border,
 .input-border:hover,
 .input-border:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
+    border: getMap(modal-input-border-accent);
 }
 
 
@@ -35,5 +34,5 @@
 .modal-form__field:focus .form-icon,
 .input-border:hover+.form-icon,
 .input-border:focus+.form-icon {
-    fill: var(--accent-color);
+    fill: getMap(icon-accent-primary);
 }

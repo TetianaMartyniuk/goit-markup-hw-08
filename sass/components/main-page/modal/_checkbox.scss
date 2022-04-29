@@ -3,8 +3,12 @@
     align-items: center;
     margin-top: 20px;
     padding-left: 23px;
-
+    
     position: relative;
+
+    @media screen and (max-width: $onlyTablet){
+        font-size: $fs12;
+    }    
 }
 
 .conditions__checkbox {
@@ -13,13 +17,13 @@
     right: -10px;
 
     &:checked+.conditions__check {
-        background-color: var(--accent-color);
+        background-color: getMap(icon-accent-primary);
     }
 }
 
 .conditions__link {
-    text-decoration: underline var(--accent-color);
-    color: var(--accent-color);
+    text-decoration: underline getMap(accent);
+    color: getMap(accent-text);
 }
 
 .conditions__check {
@@ -31,12 +35,12 @@
     width: 16px;
     height: 15px;
 
-    border: 2px solid var(--icon-accent-color);
+    border: 2px solid getMap(icon-accent-primary);
     border-radius: 2px;
     background-color: transparent;
 
     &>.icon-check {
-        fill: var(--icon-accent-second);
+        fill: getMap(icon-accent-secondary);
     }
 }
 

@@ -21,7 +21,7 @@ body,
     }
 
     @media screen and (min-width: $tablet) {
-        width: $tablet;
+        width: $tablet - 30px;
     }
 
     @media screen and (min-width: $desc) {
