@@ -218,6 +218,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 9;
   background-color: #ffffff;
   transform: translateX(-101%);
   transition: transform 200ms ease-in-out;
