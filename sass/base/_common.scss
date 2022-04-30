@@ -40,9 +40,14 @@ body,
 }
 
 .title {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: $fs28;
+    font-weight: $fw700;
     text-align: center;
 
     color: getMap('secondary-text-dark');
+
+    @media screen and (min-width: $desc) {
+        font-size: $fs36;
+        
+    }
 }
