@@ -19,13 +19,13 @@
         visibility: hidden;
         pointer-events: none;
         
-        & .backdrope__wrapper {
+        & .modal {
             transform: translate(-50%, -50%) scale(0.7);
         }
     }
 }
 
-.backdrope__wrapper {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,6 +37,7 @@
     max-height: 609px;
     background-color: getMap(primary-bgc);
     border-radius: 4px;
+    overflow: scroll;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
