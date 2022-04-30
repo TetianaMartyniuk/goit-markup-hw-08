@@ -1,5 +1,6 @@
 .team__social-list {
     display: flex;
+    margin-top: 16px;
 }
 
 // Расстояние между ссылками на соц.сети
@@ -17,12 +18,12 @@
 
     background-color: inherit;
     border-radius: 50%;
-    fill: var(--icon-main-color);
+    fill: getMap(icon-primary);
 
-    transition: background-color var(--anim-hover), fill var(--anim-hover);
+    transition: background-color getMap(anim-hover), fill getMap(anim-hover);
 
     &:hover, &:focus {
-        background-color: var(--accent-color);
-        fill: var(--icon-accent-second);
+        background-color: getMap(icon-accent-bgc);
+        fill: getMap(icon-accent-secondary);
     }
 }

@@ -55,7 +55,7 @@ body,
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -630,44 +630,41 @@ button {
 }
 
 .team {
-  background-color: var(--secondary-bgc);
-}
-
-.team__list {
-  display: flex;
-  margin-top: 50px;
-}
-
-.team__details {
-  padding: 30px 32px 30px 32px;
+  background-color: #f5f4fa;
 }
 
 .team__profile {
-  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--main-bcg);
+  background-color: #ffffff;
+  margin-top: 30px;
 }
 
-.team__profile:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team__member {
+.team__details {
+  padding: 30px 122px 24px 122px;
   font-size: 16px;
-  font-weight: 500;
   text-align: center;
-  color: var(--main-text-dark-color);
 }
 
-.team__position {
+.team__details > .team__member {
+  font-weight: 500;
+  color: #212121;
+}
+
+.team__details > .team__position {
   margin-top: 10px;
-  margin-bottom: 16px;
-  text-align: center;
 }
 
 .team__social-list {
   display: flex;
+  margin-top: 16px;
 }
 
 .team__items:not(:last-child) {
@@ -682,13 +679,13 @@ button {
   height: 44px;
   background-color: inherit;
   border-radius: 50%;
-  fill: var(--icon-main-color);
-  transition: background-color var(--anim-hover), fill var(--anim-hover);
+  fill: #AFB1B8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__link:hover, .team__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--icon-accent-second);
+  background-color: #2196F3;
+  fill: #ffffff;
 }
 
 .clients__list {
