@@ -1,11 +1,28 @@
 .filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $onlyMobile) {
+        justify-content: initial;
+        margin-top: -15px;
+        margin-left: -8px;
+    }
+
+    justify-content: center;    
 }
 
-.filter-list__item:not(:last-child) {
-    margin-right: 8px;
+.filter-list__item {
+
+    @media screen and (max-width: $onlyMobile) {
+        margin-top: 15px;
+        margin-left: 8px;
+    }
+
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+    
 }
 
 .filter-list__btn {
@@ -21,25 +38,23 @@
 }
 
 .filter-list__btn--hover {
-    color: var(--main-text-dark-color);
-    background-color: var(--secondary-bgc);
+    color: getMap(secondary-text-dark);
+    background-color: getMap(secondary-bgc);
 
     border: 0;
     border-radius: 4px;
 
     cursor: pointer;
 
-    transition: color var(--anim-hover),
-        background-color var(--anim-hover),
-        box-shadow var(--anim-hover);
+    transition: color getMap(anim-hover),
+        background-color getMap(anim-hover),
+        box-shadow getMap(anim-hover);
     
     &:hover, &:focus {
-        color: var(--secondary-text-color);
-        background-color: var(--accent-color);
+        color: getMap(secondary-text-light);
+        background-color: getMap(accent);
         
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+        box-shadow: getMap(filter-btn-shadow1), getMap(filter-btn-shadow2), getMap(filter-btn-shadow3);
     }
 
 }

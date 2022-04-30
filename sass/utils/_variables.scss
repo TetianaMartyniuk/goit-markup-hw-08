@@ -36,12 +36,19 @@ $variables: (
     'modal-input-border-accent': 1px solid #2196f3,
     'clients-border': 1px solid #AFB1B8,
     'clients-accent-border': 1px solid #2196f3,
+    'projects-card-border': 1px solid #eeeeee,
 
     // ТЕНЮШКИ
     'footer-btn-shadow': 0px 4px 4px rgba(0, 0, 0, 0.15),
     'team-card-shadow1': 0px 1px 3px rgba(0, 0, 0, 0.12),
     'team-card-shadow2': 0px 1px 1px rgba(0, 0, 0, 0.14),
     'team-card-shadow3': 0px 2px 1px rgba(0, 0, 0, 0.2),
+    'filter-btn-shadow1': 0px 3px 1px rgba(0, 0, 0, 0.1),
+    'filter-btn-shadow2': 0px 1px 2px rgba(0, 0, 0, 0.08),
+    'filter-btn-shadow3': 0px 2px 2px rgba(0, 0, 0, 0.12),
+    'projects-card-shadow1': 0px 1px 1px rgba(0, 0, 0, 0.12),
+    'projects-card-shadow2': 0px 4px 4px rgba(0, 0, 0, 0.06),
+    'projects-card-shadow3': 1px 4px 6px rgba(0, 0, 0, 0.16),
 
 
     // ИКОНКИ
@@ -80,6 +87,7 @@ $fw900: 900;
 $fs12: 12px;
 $fs14: 14px;
 $fs16: 16px;
+$fs18: 18px;
 $fs20: 20px;
 $fs26: 26px;
 // заголовки title
