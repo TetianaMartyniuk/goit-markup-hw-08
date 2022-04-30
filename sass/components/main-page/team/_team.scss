@@ -1,12 +1,29 @@
 .team {
     background-color: getMap(secondary-bgc);
+
+    @media screen and (min-width: $tablet) and (max-width: $onlyTablet) {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    
 }
 
-// .team__list {
+.team__list {
     
-//     // display: flex;
-//     // margin-top: 50px;
-// }
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    @media screen and (min-width: $desc) {
+        margin-top: 0px;
+        margin-left: 0;
+    }
+    // margin-top: 50px;
+}
 
 
 .team__profile {
@@ -24,7 +41,26 @@
 
     margin-top: getMap(card-set-grid);
 
- 
+    @media screen and (min-width: $tablet) and (max-width: $onlyTablet) {
+        flex-basis: calc( 100% / 2 - 30px);
+        margin-top: getMap(card-set-grid);
+        margin-left: getMap(card-set-grid);
+
+        max-width: 354px;
+        max-height: 536px;
+    }
+
+    @media screen and (min-width: $desc) {
+        max-width: 270px;
+        max-height: 428px;
+
+        margin-top: 50px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
 }
 
 .team__details {
@@ -39,6 +75,13 @@
 
     &>.team__position {
         margin-top: 10px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        padding: 30px 74px 24px 74px;
+    }
+    @media screen and (min-width:$desc) {
+        padding: 30px 32px;
     }
 
     // padding: 30px 32px 30px 32px;

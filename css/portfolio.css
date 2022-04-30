@@ -30,6 +30,48 @@ nav .current {
   margin: -1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  border-style: none;
+  cursor: pointer;
+}
+
+/* Убирает декор списков и линков, точечно */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 body,
 .wrapper {
   font-family: "Roboto", sans-serif;
@@ -82,48 +124,6 @@ body,
   font-weight: 700;
   text-align: center;
   color: #212121;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li {
-  margin: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  padding: 0;
-  border: 0;
-  border-style: none;
-  cursor: pointer;
-}
-
-/* Убирает декор списков и линков, точечно */
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .button {
