@@ -26,6 +26,7 @@
     width: 210px;
     height: 92px;
 
+
     @media screen and (min-width: $tablet) {
         flex-basis: calc(100% / 3 - 30px);
         width: 226px;

@@ -64,8 +64,10 @@
 }
 
 .team__details {
-    padding: 30px 122px 24px 122px;
-    font-size: $fs16;
+    padding-top: 30px;
+    padding-bottom: 24px; 
+    font-size: 16px;
+    line-height: 1.18;
     text-align: center;
 
     &>.team__member {
@@ -77,10 +79,12 @@
         margin-top: 10px;
     }
 
-    @media screen and (min-width:$tablet) {
+    
+
+    @media screen and (min-width: $tablet) {
         padding: 30px 74px 24px 74px;
     }
-    @media screen and (min-width:$desc) {
+    @media screen and (min-width: $desc) {
         padding: 30px 32px;
     }
 
