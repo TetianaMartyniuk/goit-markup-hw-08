@@ -1,9 +1,15 @@
 .work {
-    padding-top: 0;
+    display: none;
 
-    & .title {
-        margin-bottom: 50px;
+    @media screen and (min-width: $desc) {
+        display: block;
+        padding-top: 0;
+        
+        & .title {
+            margin-bottom: 50px;
+        }
     }
+    
 }
 
 .work__list {
@@ -29,13 +35,13 @@
     width: 100%;
     min-height: 70px;
 
-    background-color: var(--work-title-bgc)
+    background-color: getMap(lining-dark);
 }
 
 .work__title {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: $fs14;
+    font-weight: $fw700;
     text-transform: uppercase;
-    color: var(--secondary-text-color);
+    color: getMap(secondary-text-light);
 
 }

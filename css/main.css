@@ -585,11 +585,17 @@ button {
 }
 
 .work {
-  padding-top: 0;
+  display: none;
 }
 
-.work .title {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-top: 0;
+  }
+  .work .title {
+    margin-bottom: 50px;
+  }
 }
 
 .work__list {
@@ -613,14 +619,14 @@ button {
   align-items: center;
   width: 100%;
   min-height: 70px;
-  background-color: var(--work-title-bgc);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .work__title {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: #ffffff;
 }
 
 .team {
