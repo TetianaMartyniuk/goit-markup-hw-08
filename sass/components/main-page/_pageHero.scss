@@ -9,21 +9,44 @@
     text-align: center;
 
     background-color: getMap(hero-bgc);
+
     background-image: linear-gradient(to right, getMap(gradient-hero-mono),
         getMap(gradient-hero-mono)),
-    url('../images/hero-background.webp');
+    url('../images/hero/hero_sm.jpg');
+    @include mq(retina) {
+        background-image: linear-gradient(to right, getMap(gradient-hero-mono),
+            getMap(gradient-hero-mono)),
+        url('../images/hero/hero_sm@2x.jpg');
+    }
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
+        background-image: linear-gradient(to right, getMap(gradient-hero-mono),
+            getMap(gradient-hero-mono)),
+        url('../images/hero/hero_md.jpg');
+        @include mq(retina) {
+            background-image: linear-gradient(to right, getMap(gradient-hero-mono),
+                getMap(gradient-hero-mono)),
+            url('../images/hero/hero_md@2x.jpg');
+        }
     }
 
     @media screen and (min-width: $desc) {
         padding-top: 200px;
         padding-bottom: 200px;
         max-width: $descHero;
+        background-image: linear-gradient(to right, getMap(gradient-hero-mono),
+            getMap(gradient-hero-mono)),
+        url('../images/hero/hero_lg.jpg');
+        @include mq(retina) {
+            background-image: linear-gradient(to right, getMap(gradient-hero-mono),
+                getMap(gradient-hero-mono)),
+            url('../images/hero/hero_lg@2x.jpg');
+        }
     }
 }
 
